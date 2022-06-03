@@ -6,38 +6,57 @@ import Summary from "./Summary";
 
 const Card = () => {
 	return (
-		<Container>
-			<Header>
-				<img src={illustrationHero} alt='hero' />
-			</Header>
+		<CardContainer>
+			<CardHeader>
+				<Img src={illustrationHero} alt='hero' />
+			</CardHeader>
 			<CardBody>
 				<Summary />
-				<Plans />
-				<Button>Proceed to Payment</Button>
-				<Button className='cancel'>Cancel Order</Button>
+				{/* <Plans /> */}
+				{/* <Button>Proceed to Payment</Button> */}
+				{/* <Button className='cancel'>Cancel Order</Button> */}
 			</CardBody>
-		</Container>
+		</CardContainer>
 	);
 };
 
 export default Card;
 
-const Container = styled.div`
+const CardContainer = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
-	max-width: 400px;
+	height: 700px;
+	width: 450px;
 	background: #fff;
 	border-radius: 20px;
 	overflow: hidden;
+	@media (max-width: 375px) {
+		height: 570px;
+		width: 325px;
+	}
 `;
 
-const Header = styled.div`
+const CardHeader = styled.div`
 	height: 220px;
+	width: 100%;
+	overflow: hidden;
+	@media (max-width: 375px) {
+		height: 160px;
+		width: 325px;
+	}
+`;
+
+const Img = styled.img`
+	height: 220px;
+	@media (max-width: 375px) {
+		object-fit: contain;
+		height: 160px;
+		width: 325px;
+	}
 `;
 
 const CardBody = styled.div`
-	padding: 2.75rem;
+	/* padding: 2.75rem 1rem; */
 	text-align: center;
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { bright_blue, desaturated_blue, pale_blue } from "../colors";
+import { bright_blue, desaturated_blue } from "../colors";
 
 const Button = styled.button`
 	width: 100%;
@@ -12,6 +12,9 @@ const Button = styled.button`
 	margin-bottom: 1rem;
 	box-shadow: 0 15px 15px #d1cff3;
 	cursor: pointer;
+	@media (max-width: 375px) {
+		width: 90%;
+	}
 	&:hover {
 		background: #756cf1;
 	}
