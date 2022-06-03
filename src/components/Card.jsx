@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { very_pale_blue } from "../colors";
 import illustrationHero from "../starterFiles/order-summary-component-main/images/illustration-hero.svg";
+import Button from "./Button";
 import Plans from "./Plans";
 import Summary from "./Summary";
 
@@ -13,7 +13,8 @@ const Card = () => {
 			<CardBody>
 				<Summary />
 				<Plans />
-				<h1>Buttons!</h1>
+				<Button>Proceed to Payment</Button>
+				<Button className='cancel'>Cancel Order</Button>
 			</CardBody>
 		</Container>
 	);
@@ -37,6 +38,6 @@ const Header = styled.div`
 `;
 
 const CardBody = styled.div`
-	padding: 3.25rem 2.75rem;
+	padding: 2.75rem;
 	text-align: center;
 `;

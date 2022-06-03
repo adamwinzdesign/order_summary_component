@@ -1,16 +1,18 @@
 import styled from "styled-components";
-import { dark_blue, desaturated_blue, very_pale_blue, pale_blue } from "../colors";
 import iconMusic from "../starterFiles/order-summary-component-main/images/icon-music.svg";
+import StyledH2 from "../type/StyledH2";
+import StyledP from "../type/StyledP";
+import StyledA from "../type/StyledA";
 
 const Plans = () => {
 	return (
 		<PlansContainer>
 			<img src={iconMusic} alt='music' />
 			<PlanInfo>
-				<h2>Annual Plan</h2>
-				<p>$59.99/year</p>
+				<StyledH2>Annual Plan</StyledH2>
+				<StyledP>$59.99/year</StyledP>
 			</PlanInfo>
-			<a href='/change'>Change</a>
+			<StyledA href='/change'>Change</StyledA>
 		</PlansContainer>
 	);
 };
@@ -20,14 +22,18 @@ export default Plans;
 const PlansContainer = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #f8f9fe;
+	width: 100%;
 	padding: 1.5rem;
 	border-radius: 15px;
+	margin-bottom: 1rem;
 `;
 
 const PlanInfo = styled.div`
 	display: flex;
+	align-items: flex-start;
 	flex-direction: column;
 	margin: 0 16px;
+	width: 10rem;
 `;
