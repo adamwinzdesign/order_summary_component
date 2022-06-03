@@ -10,8 +10,9 @@ const MainContainer = styled.div`
 	padding: 0;
 	min-height: 100vh;
 	width: 1440px;
-	background-image: ${`url(${patternBackgroundDesktop})`};
+	background-image: url(${patternBackgroundDesktop});
 	background-repeat: no-repeat;
+	background-color: ${pale_blue};
 `;
 
 export default MainContainer;
