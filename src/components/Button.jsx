@@ -9,7 +9,7 @@ const Button = styled.button`
 	color: #fff;
 	height: 3.125rem;
 	font-size: 0.9rem;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 	box-shadow: 0 15px 15px #d1cff3;
 	cursor: pointer;
 	@media (max-width: 375px) {

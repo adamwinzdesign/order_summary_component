@@ -12,9 +12,9 @@ const Card = () => {
 			</CardHeader>
 			<CardBody>
 				<Summary />
-				{/* <Plans /> */}
-				{/* <Button>Proceed to Payment</Button> */}
-				{/* <Button className='cancel'>Cancel Order</Button> */}
+				<Plans />
+				<Button>Proceed to Payment</Button>
+				<Button className='cancel'>Cancel Order</Button>
 			</CardBody>
 		</CardContainer>
 	);
@@ -57,6 +57,6 @@ const Img = styled.img`
 `;
 
 const CardBody = styled.div`
-	/* padding: 2.75rem 1rem; */
 	text-align: center;
+	padding: 50px;
 `;

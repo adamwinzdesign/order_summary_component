@@ -27,7 +27,7 @@ const PlansContainer = styled.div`
 	width: 100%;
 	padding: 1.5rem;
 	border-radius: 15px;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
 `;
 
 const PlanInfo = styled.div`
