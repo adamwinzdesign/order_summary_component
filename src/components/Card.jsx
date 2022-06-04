@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { very_pale_blue } from "../colors";
 import illustrationHero from "../starterFiles/order-summary-component-main/images/illustration-hero.svg";
 import Button from "./Button";
 import Plans from "./Plans";
@@ -13,8 +14,10 @@ const Card = () => {
 			<CardBody>
 				<Summary />
 				<Plans />
-				<Button>Proceed to Payment</Button>
-				<Button className='cancel'>Cancel Order</Button>
+				<Buttons>
+					<Button>Proceed to Payment</Button>
+					<Button className='cancel'>Cancel Order</Button>
+				</Buttons>
 			</CardBody>
 		</CardContainer>
 	);
@@ -23,17 +26,18 @@ const Card = () => {
 export default Card;
 
 const CardContainer = styled.div`
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	height: 700px;
 	width: 450px;
-	background: #fff;
-	border-radius: 20px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 15px;
 	overflow: hidden;
+	border: 1px solid red;
 	@media (max-width: 375px) {
-		height: 570px;
 		width: 325px;
+		height: 570px;
 	}
 `;
 
@@ -57,6 +61,20 @@ const Img = styled.img`
 `;
 
 const CardBody = styled.div`
-	text-align: center;
-	padding: 50px;
+	height: 480px;
+	padding: 55px 50px;
+	background-color: ${very_pale_blue};
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	@media (max-width: 375px) {
+		height: 410px;
+		padding: 40px 25px;
+	}
+`;
+
+const Buttons = styled.div`
+	@media (max-width: 375px) {
+	}
 `;
