@@ -25,6 +25,7 @@ const PlansContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 1.1rem 0;
 	padding: 25px;
 	border-radius: 15px;
 	@media (max-width: 375px) {

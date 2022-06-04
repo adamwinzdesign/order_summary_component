@@ -34,7 +34,6 @@ const CardContainer = styled.div`
 	justify-content: space-between;
 	border-radius: 15px;
 	overflow: hidden;
-	border: 1px solid red;
 	@media (max-width: 375px) {
 		width: 325px;
 		height: 570px;
@@ -75,6 +74,9 @@ const CardBody = styled.div`
 `;
 
 const Buttons = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	@media (max-width: 375px) {
 	}
 `;
