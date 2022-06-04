@@ -63,7 +63,7 @@ const Img = styled.img`
 const CardBody = styled.div`
 	height: 480px;
 	padding: 55px 50px;
-	background-color: ${very_pale_blue};
+	background-color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

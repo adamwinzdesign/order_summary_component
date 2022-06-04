@@ -20,11 +20,15 @@ const Plans = () => {
 export default Plans;
 
 const PlansContainer = styled.div`
+	background-color: #f8f9fe;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 25px;
+	border-radius: 15px;
 	@media (max-width: 375px) {
+		padding: 15px;
 	}
 `;
 
