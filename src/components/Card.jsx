@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { very_pale_blue } from "../colors";
 import illustrationHero from "../starterFiles/order-summary-component-main/images/illustration-hero.svg";
 import Button from "./Button";
 import Plans from "./Plans";
