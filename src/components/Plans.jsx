@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import iconMusic from "../starterFiles/order-summary-component-main/images/icon-music.svg";
+import iconMusic from "../images/icon-music.svg";
 import StyledH2 from "../type/StyledH2";
 import StyledP from "../type/StyledP";
 import StyledA from "../type/StyledA";

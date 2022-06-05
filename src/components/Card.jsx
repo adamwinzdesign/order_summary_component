@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import illustrationHero from "../starterFiles/order-summary-component-main/images/illustration-hero.svg";
+import illustrationHero from "../images/illustration-hero.svg";
 import Button from "./Button";
 import Plans from "./Plans";
 import Summary from "./Summary";
