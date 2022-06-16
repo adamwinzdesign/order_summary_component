@@ -4,7 +4,7 @@ import MainContainer from "./MainContainer";
 const Main = () => {
 	return (
 		<MainContainer>
-			<Card />
+			<Card role='contentinfo' />
 		</MainContainer>
 	);
 };
